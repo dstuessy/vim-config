@@ -1,11 +1,13 @@
 execute pathogen#infect()
 
+let s:filepath = expand('%')
+
 
 """"""""""""""""""""""""""
 " Vim settings
 """"""""""""""""""""""""""
 syntax on
-filetype plugin indent on
+" filetype plugin indent on
 set relativenumber
 " set colorscheme
 colorscheme hybrid_reverse
@@ -19,6 +21,12 @@ map ~ :!gnome-terminal & disown<CR>
 set mouse=a
 " force clearer highlighting for selected paren
 hi MatchParen cterm=bold ctermfg=white
+" open new splits at bottom
+set splitbelow
+" run eslint on save of javascript files
+autocmd BufWritePost *.es,*.js call asynccommand#run('eslint --fix %', function('s:Eslinthandler'))
+autocmd BufReadPost *.es,*.js call s:UpdateFilePath()
+
 
 """"""""""""""""""""""""""
 " Plugin Settings
@@ -27,3 +35,16 @@ hi MatchParen cterm=bold ctermfg=white
 " NERDTree
 autocmd vimenter * NERDTree
 map <S-TAB> :NERDTreeToggle<CR>
+
+
+""""""""""""""""""""""""""
+" Functions
+""""""""""""""""""""""""""
+
+function! s:Eslinthandler(tempfilepath)
+	exec 'e! ' . s:filepath
+endfunction
+
+function! s:UpdateFilePath()
+	let s:filepath = expand('%')
+endfunction
