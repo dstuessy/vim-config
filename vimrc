@@ -7,6 +7,7 @@ execute pathogen#infect()
 syntax on
 filetype plugin indent on
 set relativenumber
+" set colorscheme
 colorscheme hybrid_reverse
 " go to next tab
 map <S-H> gT 
