@@ -20,7 +20,7 @@
 	path = bundle/html5.vim
 	url = https://github.com/othree/html5.vim.git
 [submodule "bundle/emmet-vim"]
-	path = bundle/ememt-vim
+	path = bundle/emmet-vim
 	url = https://github.com/mattn/emmet-vim.git
 [submodule "bundle/editorconfig-vim"]
 	path = bundle/editorconfig-vim
@@ -34,3 +34,6 @@
 [submodule "bundle/AsyncCommand"]
 	path = bundle/AsyncCommand
 	url = https://github.com/idbrii/AsyncCommand.git
+[submodule "bundle/nerdtree-git-plugin"]
+	path = bundle/nerdtree-git-plugin
+	url = https://github.com/Xuyuanp/nerdtree-git-plugin.git
