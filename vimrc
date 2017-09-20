@@ -1,13 +1,13 @@
 execute pathogen#infect()
 
-let s:filepath = expand('%')
+" let s:filepath = expand('%')
 
 
 """"""""""""""""""""""""""
 " Vim settings
 """"""""""""""""""""""""""
 syntax on
-" filetype plugin indent on
+filetype plugin indent on
 set relativenumber
 " set colorscheme
 colorscheme hybrid_reverse
@@ -24,8 +24,8 @@ hi MatchParen cterm=bold ctermfg=white
 " open new splits at bottom
 set splitbelow
 " run eslint on save of javascript files
-autocmd BufWritePost *.es,*.js call asynccommand#run('eslint --fix %', function('s:Eslinthandler'))
-autocmd BufReadPost *.es,*.js call s:UpdateFilePath()
+" autocmd BufWritePost *.es,*.js call asynccommand#run('eslint --fix %', function('s:Eslinthandler'))
+" autocmd BufReadPost *.es,*.js call s:UpdateFilePath()
 
 
 """"""""""""""""""""""""""
