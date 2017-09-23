@@ -31,9 +31,6 @@
 [submodule "bundle/auto-pairs"]
 	path = bundle/auto-pairs
 	url = https://github.com/jiangmiao/auto-pairs.git
-[submodule "bundle/AsyncCommand"]
-	path = bundle/AsyncCommand
-	url = https://github.com/idbrii/AsyncCommand.git
 [submodule "bundle/nerdtree-git-plugin"]
 	path = bundle/nerdtree-git-plugin
 	url = https://github.com/Xuyuanp/nerdtree-git-plugin.git
