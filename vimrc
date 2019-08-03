@@ -37,6 +37,15 @@ set splitbelow
 map <S-TAB> :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
+" YCM
+" see lsp/readme for more examples
+let g:ycm_language_server = [
+  \    { 'name': 'vue',
+  \      'filetypes': [ 'vue' ], 
+  \      'cmdline': [ expand( '$HOME/.vim/lsp/vue/node_modules/.bin/vls' ) ]
+  \    },
+  \  ]
+
 
 """"""""""""""""""""""""""
 " Functions
