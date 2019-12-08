@@ -56,6 +56,14 @@ let g:cm_language_server = [
   \   },
   \  ]
 
+" CtrlP
+" let g:ctrlp_max_files = 20000
+" let g:ctrlp_custom_ignore = '.git$|vendor$|node_modules$'
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/](\.(git|hg|svn)|node_modules|vendor)$',
+  \  }
+let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
+
 
 """"""""""""""""""""""""""
 " Functions
