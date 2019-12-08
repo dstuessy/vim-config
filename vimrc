@@ -14,7 +14,7 @@ set relativenumber
 " colorscheme hybrid_reverse
 colorscheme onedark
 " go to next tab
-map <S-H> gT 
+map <S-H> gT
 " go to previous tab
 map <S-L> gt
 " open terminal in vim
