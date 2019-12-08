@@ -26,6 +26,8 @@ set mouse=a
 hi MatchParen cterm=bold ctermfg=white
 " open new splits at bottom
 set splitbelow
+set foldenable
+set foldmethod=indent
 " run eslint on save of javascript files
 " autocmd BufWritePost *.es,*.js call asynccommand#run('eslint --fix %', function('s:Eslinthandler'))
 " autocmd BufReadPost *.es,*.js call s:UpdateFilePath()
