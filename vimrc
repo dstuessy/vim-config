@@ -19,6 +19,7 @@ map <S-H> gT
 map <S-L> gt
 " open terminal in vim
 map ~ :!gnome-terminal & disown<CR>
+map <C-L> :syntax sync fromstart<CR>
 " enable mouse for xterm
 set mouse=a
 " force clearer highlighting for selected paren
