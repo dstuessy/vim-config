@@ -44,11 +44,16 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 
 " YCM
 " see lsp/readme for more examples
-let g:ycm_language_server = [
-  \    { 'name': 'vue',
-  \      'filetypes': [ 'vue' ], 
-  \      'cmdline': [ expand( '$HOME/.vim/lsp/vue/node_modules/.bin/vls' ) ]
-  \    },
+let g:cm_language_server = [
+  \   { 'name': 'vue',
+  \     'filetypes': [ 'vue' ],
+  \     'cmdline': [ expand( '$HOME/.vim/lsp/vue/node_modules/.bin/vls' ) ]
+  \   },
+  \   {
+  \     'name': 'php',
+  \     'cmdline': [ 'php', expand( '/home/daniel/.vim/lsp/php/vendor/bin/php-language-server.php' ) ],
+  \     'filetypes': [ 'php' ],
+  \   },
   \  ]
 
 
