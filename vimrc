@@ -8,6 +8,7 @@ execute pathogen#infect()
 """"""""""""""""""""""""""
 syntax on
 filetype plugin indent on
+set modeline
 set relativenumber
 " set colorscheme
 colorscheme hybrid_reverse
