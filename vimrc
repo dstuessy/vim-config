@@ -10,8 +10,9 @@ syntax on
 filetype plugin indent on
 set modeline
 set relativenumber
-" set colorscheme
-colorscheme hybrid_reverse
+" set the colorscheme
+" colorscheme hybrid_reverse
+colorscheme onedark
 " go to next tab
 map <S-H> gT 
 " go to previous tab
