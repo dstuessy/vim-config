@@ -20,6 +20,7 @@ map <S-L> gt
 " open terminal in vim
 map ~ :!gnome-terminal & disown<CR>
 map <C-L> :syntax sync fromstart<CR>
+map <C-T> :s:\s\+$::g<CR>
 " enable mouse for xterm
 set mouse=a
 " force clearer highlighting for selected paren
@@ -76,3 +77,4 @@ endfunction
 function! s:UpdateFilePath()
 	let s:filepath = expand('%')
 endfunction
+
