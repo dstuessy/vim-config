@@ -49,3 +49,6 @@
 [submodule "lsp"]
 	path = lsp
 	url = git@github.com:ycm-core/lsp-examples.git
+[submodule "bundle/typescript-vim"]
+	path = bundle/typescript-vim
+	url = https://github.com/leafgarland/typescript-vim.git
