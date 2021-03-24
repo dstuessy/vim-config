@@ -41,7 +41,7 @@ set foldmethod=indent
 " NERDTree
 " autocmd vimenter * NERDTree
 map <S-TAB> :NERDTreeToggle<CR>
-map <C-S-o> :NERDTreeToggle %<CR>
+map <C-T> :NERDTreeToggle %<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 " YCM
