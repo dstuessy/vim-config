@@ -21,6 +21,7 @@ map <S-L> gt
 map ~ :!gnome-terminal & disown<CR>
 map <C-L> :syntax sync fromstart<CR>
 map <C-T> :s:\s\+$::g<CR>
+map <C-H> :call HTMLSanitize()<CR>
 " enable mouse for xterm
 set mouse=a
 " force clearer highlighting for selected paren
@@ -79,4 +80,8 @@ endfunction
 
 function! s:UpdateFilePath()
 	let s:filepath = expand('%')
+endfunction
+
+function! g:HTMLSanitize()
+	exec "'<,'>s:<:\\&lt;:ge | '<,'>s:>:\\&gt;:ge"
 endfunction
