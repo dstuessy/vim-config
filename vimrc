@@ -30,6 +30,7 @@ hi MatchParen cterm=bold ctermfg=white
 set splitbelow
 set foldenable
 set foldmethod=indent
+set dir=$VIM_SWAP_DIR
 " run eslint on save of javascript files
 " autocmd BufWritePost *.es,*.js call asynccommand#run('eslint --fix %', function('s:Eslinthandler'))
 " autocmd BufReadPost *.es,*.js call s:UpdateFilePath()
