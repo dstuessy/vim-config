@@ -10,6 +10,7 @@ syntax on
 filetype plugin indent on
 set modeline
 set relativenumber
+set nowrap
 " set the colorscheme
 " colorscheme hybrid_reverse
 colorscheme onedark
