@@ -9,6 +9,7 @@ execute pathogen#infect()
 syntax on
 filetype plugin indent on
 set modeline
+set modelines=5
 set relativenumber
 set nowrap
 " set the colorscheme
